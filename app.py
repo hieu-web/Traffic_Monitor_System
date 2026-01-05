@@ -1,6 +1,4 @@
-# ==========================================================
-# TRAFFIC VIOLATION INTELLIGENCE SYSTEM (FULL ENGLISH)
-# ==========================================================
+
 import os
 import cv2
 import time
