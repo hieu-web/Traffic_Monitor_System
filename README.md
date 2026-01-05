@@ -1,21 +1,35 @@
-# Traffic Monitor System
+# ?? Traffic Monitor System
 
-A computer vision-based application designed to detect, track, and monitor vehicle traffic flow in real-time.
+A computer vision-based application designed to detect, track, and monitor vehicle traffic flow and detect violations in real-time.
 
-## 📌 Features
-* **Vehicle Detection**: Real-time identification of cars, motorbikes, buses, and trucks.
-* **Traffic Analysis**: Process video data for traffic flow insights.
-* **Optimized Models**: Uses high-performance weights for accurate detection.
+## ?? Live Demo
+Experience the application directly in your browser:
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_svg)](https://hieu-traffic-monitor.streamlit.app/)
 
-## 📂 Project Structure
-* `app.py`: The main Python execution file for the system.
-* `models/`: Folder containing pre-trained model weights (e.g., `best.pt`).
+## ?? Features
+* **Vehicle Detection**: Identify and classify cars, motorbikes, buses, and trucks.
+* **Real-time Monitoring**: Process video streams for live traffic analysis.
+* **Violation Detection**: Automatically capture evidence of vehicles crossing the stop line during red/yellow lights.
+* **License Plate OCR**: Integrated PaddleOCR for potential plate recognition.
+* **Data Analytics**: Live counting and classification statistics.
 
-## 🚀 Getting Started
+## ?? Project Structure
+* `app.py`: The main Streamlit web application.
+* `models/`: Contains the pre-trained YOLO model (`best.pt`).
+* `requirements.txt`: Configuration for the cloud environment.
 
-### 1. Installation
-Clone the repository and install the required libraries:
-```bash
-git clone [https://github.com/hieu-web/Traffic_Monitor_System.git](https://github.com/hieu-web/Traffic_Monitor_System.git)
-cd Traffic_Monitor_System
-pip install ultralytics opencv-python
+## ?? How to Use (Web Version)
+1. **Access the Demo**: Click the "Streamlit App" badge above.
+2. **Upload Video**: Use the sidebar to upload a traffic video file (.mp4, .avi).
+3. **Configure ROI**: Adjust the Yellow box (Light ROI) to cover the traffic light in the video.
+4. **Set Stop Line**: Move the slider to align the Red/Green line with the actual road stop line.
+5. **View Results**: Watch real-time counting and download violation evidence if needed.
+
+## ?? Tech Stack
+* **Language**: Python
+* **AI Frameworks**: Ultralytics (YOLOv8/v10), PaddleOCR.
+* **UI**: Streamlit.
+* **Processing**: OpenCV (Headless).
+
+---
+*Developed by Hieu-Web*
